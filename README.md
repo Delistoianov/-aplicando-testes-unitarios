@@ -29,6 +29,7 @@ namespace Temperatura
 }
 
 ```
+Nesse código, a classe estática chamada ConversorTemperatura com um método estático FahrenheitParaCelsius que converte temperaturas de Fahrenheit para Celsius, arredondando o resultado para duas casas decimais.  A classe Program contém o método Main, que solicita ao usuário uma temperatura em Fahrenheit, converte essa temperatura para Celsius usando o método FahrenheitParaCelsius e, em seguida, exibe o resultado convertido.
 
 Para fazer os testes foi utilizado os frameworks xUnit, NUnit e MSTest. Abaixo está o código e os resultados dos respectivos frameworks.
 
