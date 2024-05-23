@@ -34,6 +34,8 @@ Para fazer os testes foi utilizado os frameworks xUnit, NUnit e MSTest. Abaixo e
 
 ### Teste com XUnit:
 
+No xUnit, o atributo InlineData é usado em conjunto com o atributo Theory. O Theory indica que o método de teste é um teste parametrizado que deve ser executado múltiplas vezes com diferentes conjuntos de dados. O InlineData é usado para definir esses conjuntos de dados. Cada uso do InlineData especifica um conjunto diferente de parâmetros que serão passados para o método de teste. 
+
 ```
 namespace Test.XUnit.Temperatura
 {
@@ -69,6 +71,8 @@ namespace Test.XUnit.Temperatura
 
 ### Teste com NUnit:
 
+No NUnit, o TestCase é o atributo equivalente ao InlineData do xUnit. Ele também é usado para definir conjuntos de dados para testes parametrizados, mas é especificamente parte do NUnit. O TestCase permite especificar os valores de entrada e os valores esperados diretamente na assinatura do método de teste.
+
 ```
 namespace Temperatura.Testes
 {
@@ -103,6 +107,8 @@ namespace Temperatura.Testes
 ![teste_falhando_nunit](/Assets/passandoTesteNUnit.png)
 
 ### Teste com MSTest:
+
+O MSTest usa o atributo DataRow em conjunto com DataTestMethod para realizar testes parametrizados. O DataRow fornecer os dados de entrada para cada iteração do teste. O DataTestMethod indica que o método de teste é um teste baseado em dados e deve ser invocado uma vez para cada DataRow fornecido.
 
 ```
 namespace Temperatura.Testes
