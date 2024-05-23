@@ -4,7 +4,7 @@
 
 * Abaixo está a classe a ser testada:
 
-```
+```csharp
 namespace Temperatura
 {
     public static class ConversorTemperatura
@@ -36,7 +36,7 @@ Para fazer os testes foi utilizado os frameworks xUnit, NUnit e MSTest. Abaixo e
 
 No xUnit, o atributo InlineData é usado em conjunto com o atributo Theory. O Theory indica que o método de teste é um teste parametrizado que deve ser executado múltiplas vezes com diferentes conjuntos de dados. O InlineData é usado para definir esses conjuntos de dados. Cada uso do InlineData especifica um conjunto diferente de parâmetros que serão passados para o método de teste. 
 
-```
+```csharp
 namespace Test.XUnit.Temperatura
 {
     public class TestesConversorTemperatura
@@ -73,7 +73,7 @@ namespace Test.XUnit.Temperatura
 
 No NUnit, o TestCase é o atributo equivalente ao InlineData do xUnit. Ele também é usado para definir conjuntos de dados para testes parametrizados, mas é especificamente parte do NUnit. O TestCase permite especificar os valores de entrada e os valores esperados diretamente na assinatura do método de teste.
 
-```
+```csharp
 namespace Temperatura.Testes
 {
     public class TestesConversorTemperatura
