@@ -146,4 +146,6 @@ namespace Temperatura.Testes
 ![teste_falhando_mstest](/Assets/passandoMSTest.png)
 
 
+### Todos os testes executando:
 
+![todos testem passando](/Assets/allTestPass.png)
